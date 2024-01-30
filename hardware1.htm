@@ -1,0 +1,87 @@
+<htm lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Комплектующие</title>
+        <style>
+            .centered {
+                text-align: center;
+            }
+            .main-header {
+                color: #000099;
+            }
+            .table {
+                border: 1px solid #000000;
+                background-color: #ccffcc;
+            }
+            .bigger {
+                font-size: 17px;
+                font-weight: bold;
+            }
+            .col1 {
+                width: 10%;
+                color: #000000;
+            }
+            .col2 {
+                width: 70%;
+            }
+            .col3 {
+                width: 20%;
+            }
+            td {
+                border: 1px solid #000000;
+            }
+            .wrapper {
+                display: flex;
+            }
+            .left, .right {
+                height: 100%;
+            }
+            .right {
+                justify-content: flex-end;
+            }
+            .image {
+                max-width: 70%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="centered main-header">
+            Цены на комплектующие
+        </h1>
+        <hr>
+        <h4 class="centered">
+            [<a href="index.htm">Главная</a>]
+            [<a href="glossary.htm">Словарь</a>]
+            [<a href="software.htm">Программы</a>]
+        </h4>
+        <div class="wrapper">
+            <div class="left">
+                <img class="image" src="img0.png"/>
+            </div>
+            <div class="right table">
+                <table>
+                    <tr>
+                       <td class="centered col1 bigger">№</td>
+                       <td class="centered col2 bigger">Наименование</td>
+                       <td class="centered col3 bigger">Цена</td>
+                    </tr>
+                    <tr>
+                       <td class="centered">1</td>
+                       <td>Процессор Core i3</td>
+                       <td>70</td>
+                    </tr>
+                    <tr>
+                       <td class="centered">2</td>
+                       <td>Винчестер 500 Гб</td>
+                       <td>120</td>
+                    </tr>
+                    <tr>
+                       <td class="centered">3</td>
+                       <td>Монитор 17"</td>
+                       <td>180</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</htm>
