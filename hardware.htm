@@ -1,47 +1,127 @@
-<html>
-<head>
-    <title>Комплектующие</title>
-    <meta charset="utf-8">
-</head>
-
-<body>
-<h1 style="text-align: center;">
-    <a style="color: #000099;">Цены на комплектующие</a>
-</h1>
-
-<table style="border: solid; width: 50%; background-color: #ccffcc;">
-    <tr>
-        <td style="width: 10%; text-align: center; color: #000000; font-size: 110%; font-weight: bold;">№</td>
-        <td style="width: 70%; text-align: center; font-size: 110%; font-weight: bold;">Наименование</td>
-        <td style="width: 20%; text-align: center; font-size: 110%; font-weight: bold;">Цена</td>
-    </tr>
-    <tr>
-    <tr style="text-align: center">1</tr>
-    <td>Процессор Core i3</td>
-    <td>70</td>
-    </tr>
-    <tr>
-        <td style="text-align: center">2</td>
-        <td>Винчестер 500 Гб</td>
-        <td>120</td>
-    </tr>
-    <tr>
-        <td style="text-align: center">3</td>
-        <td>Монитор 17"</td>
-        <td>180</td>
-    </tr>
-</table>
-
-<p style="color: #ff0000; text-align: left;">
-<ul>
-    Задания 3:
-    <li> Добавь копирайты и меню на эту страницу.</li>
-    <li> По аналогии с главной, оформи два блока: слева - случайный рисунок, а справа таблица.</li>
-    <li> Добавь ссылку "На главную" в том-же стиле, что и оформлены ссылки на самой главной;</li>
-    <li> Добавь оформление таблицы через CSS: поставь ширину таблицы 450 пикселей;</li>
-    <li> Сделай цвет заголовка, такой-же, как и у остальных страниц сайта;</li>
-    <li> Поставь таблицу по центру блока в котором она находится;</li>
-    <li> Добавь еще 7 (семь) любых наименований комплектующих к таблице на данной странице;</li>
-</ul>
-</body>
-</html>
+<htm lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Комплектующие</title>
+        <style>
+            .centered {
+                text-align: center;
+            }
+            .table {
+                border: 1px solid #000000;
+                background-color: #ccffcc;
+                width: 450px;
+            }
+            .bigger {
+                font-size: 17px;
+                font-weight: bold;
+            }
+            .col1 {
+                width: 10%;
+                color: #000000;
+            }
+            .col2 {
+                width: 70%;
+            }
+            .col3 {
+                width: 20%;
+            }
+            td {
+                border: 1px solid #000000;
+            }
+            .wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .left, .right {
+                height: 100%;
+            }
+            .left {
+                margin-left: 0;
+            }
+            .right {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            .image {
+                min-height: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="centered">
+            Цены на комплектующие
+        </h1>
+        <hr>
+        <h4 class="centered">
+            [<a href="index.htm">Главная</a>]
+            [<a href="glossary.htm">Словарь</a>]
+            [<a href="software.htm">Программы</a>]
+        </h4>
+        <div class="wrapper">
+            <div class="left">
+                <img class="image" src="img0.png"/>
+            </div>
+            <div class="right">
+                <table class="table">
+                    <tr>
+                       <td class="centered col1 bigger">№</td>
+                       <td class="centered col2 bigger">Наименование</td>
+                       <td class="centered col3 bigger">Цена</td>
+                    </tr>
+                    <tr>
+                       <td class="centered">1</td>
+                       <td>Процессор Core i3</td>
+                       <td>70</td>
+                    </tr>
+                    <tr>
+                       <td class="centered">2</td>
+                       <td>Винчестер 500 ГБ</td>
+                       <td>120</td>
+                    </tr>
+                    <tr>
+                       <td class="centered">3</td>
+                       <td>Монитор 17"</td>
+                       <td>180</td>
+                    </tr>
+                    <tr>
+                        <td class="centered">4</td>
+                        <td>Видеокарта NVIDIA GeForce GTX 1660 SUPER</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td class="centered">5</td>
+                        <td>Монитор 24"</td>
+                        <td>190</td>
+                    </tr>
+                    <tr>
+                        <td class="centered">6</td>
+                        <td>Кулер 100 Вт</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td class="centered">7</td>
+                        <td>Клавиатура механическая</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td class="centered">8</td>
+                        <td>Мышь лазерная</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td class="centered">9</td>
+                        <td>SSD накопитель 256 ГБ</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td class="centered">10</td>
+                        <td>Корпус AeroCool</td>
+                        <td>90</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</htm>

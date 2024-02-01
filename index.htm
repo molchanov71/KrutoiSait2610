@@ -1,51 +1,49 @@
 <html lang="ru">
-<head>
-    <title>Всё о компьютере</title>
-    <meta charset="utf-8">
-</head>
-<body>
-<h1 style="text-align: center;">
-    <span style="color: #0000ff;">
-        Все о компьютере
-    </span>
-</h1>
-<hr/>
-<p style="text-align: center;">
-    [<a href="hardware.htm">Комплектующие</a>]
-    [<a href="glossary.htm">Словарь</a>]
-    [<a href="software.htm">Программы</a>]
-</p>
-<!-- Два блока на сайте -->
-<div style="width: 100%;">
-    <div style="float: right; display: block;">
-        <img src="computer.gif" alt="Компьютер">
-    </div>
-    <div style="float: left;">
-        <p style="text-align: left;">На этом сайте вы сможете получить различную информацию о компьютере, его
-            программном обеспечении
-            и ценах на компьютерные комплектующие.</p>
-        <p style="text-align: right">Терминологический словарь познакомит вас с компьютерными терминами.</p>
-    </div>
-</div>
-<hr/>
-<div style="font-style: italic; display: block;">
-    &#169; Москва 2021 школа №1501 Фамилия Имя
-    Е-mail: <a href="mailto:почтаученика@mail.ru">почтаученика@mail.ru</a>
-</div>
-<p>
-<ul style="color: #ff0000; text-align: left;">
-    <br/> Выполняй задания написанные красным цветом.
-    После выполнения всех заданий удали красный текст со всех страниц сайта вместе с лишними тегами.
-    Cохрани все страницы, и выложи сайт на сервер в Интернете.
-    <br/> Задания 1 по всему сайту:
-    <li>Создай CSS для всех страниц сайта.</li>
-    <li>Создай JavaScript для меню и копирайтов всех страниц сайта.</li>
-    <li>Пропиши в копирайты свои данные: Фамилию, Имя, адрес электронной почты.</li>
-    <li>Установи цвет горизонтальных линий темно-зеленый;</li>
-    <li>Все рисунки сайта поставь слева;</li>
-    <br/>Задания 2 к главной странице:
-    <li>Установи выравнивание всего текста по левому краю (к рисунку).</li>
-</ul>
-</p>
-</body>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Всё о компьютере</title>
+        <style>
+            * {
+                text-align: left;
+            }
+            .wrapper {
+                display: flex;
+            }
+            .left, .right {
+                height: 100%;
+            }
+            .right {
+                justify-content: right;
+            }
+            .centered {
+                text-align: center;
+            }
+            hr {
+                background-color: #003333;
+                height: 1px;
+                border: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="centered">Всё о компьютере</h1>
+        <hr>
+        <h4 class="centered">
+            [<a href="hardware.htm">Комплектующие</a>]
+            [<a href="glossary.htm">Словарь</a>]
+            [<a href="software.htm">Программы</a>]
+        </h4>
+        <div class="wrapper">
+            <div class="left">
+                <img src="computer.gif"/>
+            </div>
+            <div class="right">
+                На этом сайте вы сможете получить различную информацию о компьютере, его программном обеспечении и ценах на компьютерные комплектующие. Терминологический словарь познакомит вас с компьютерными терминами
+            </div>
+        </div>
+        <hr/>
+        <address>
+            &copy; Москва 2024 школа №1501 Молчанов Степан E-mail: <a href="mailto:stepanmol4anoff@yandex.ru">stepanmol4anoff@yandex.ru</a>
+        </address>
+    </body>
 </html>
